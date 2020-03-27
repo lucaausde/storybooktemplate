@@ -1,10 +1,16 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "./styles/reset";
 import fonts from "./fonts/fonts";
+import headline1 from "./styles/typography";
 
 const GlobalStyle = createGlobalStyle`  
   ${reset}
   ${fonts}
+
+  h1 {
+    ${headline1}
+  }
+
   *,
   :before,
   :after {

@@ -1,11 +1,18 @@
 import React from "react";
+import { ThemeProvider } from "styled-components";
+import defaultTheme from "./constants/theme/defaultTheme";
+import GlobalStyle from "./constants/globals";
 
-function App() {
+import { useTranslation } from "react-i18next";
+
+const App: React.FC = () => {
+  const { t } = useTranslation();
   return (
-    <div className="App">
-      <header className="App-header">{"Hi"}</header>
-    </div>
+    <ThemeProvider theme={defaultTheme}>
+      <GlobalStyle />
+      {t("homepage-title")}
+    </ThemeProvider>
   );
-}
+};
 
 export default App;

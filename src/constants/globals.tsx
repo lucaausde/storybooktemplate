@@ -1,8 +1,8 @@
 import { createGlobalStyle } from "styled-components";
-import fonts from "./fonts/fonts.css";
-import reset from "./reset.css";
+import reset from "./styles/reset";
+import fonts from "./fonts/fonts";
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`  
   ${reset}
   ${fonts}
   *,
@@ -14,6 +14,10 @@ const GlobalStyle = createGlobalStyle`
     appearance: none !important;
   }
 
+  ::-moz-selection {
+    color: ${props => props.theme.colors.highlightcolor};
+    background: ${props => props.theme.colors.highlightbackground};
+  }
 `;
 
 export default GlobalStyle;

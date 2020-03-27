@@ -5,5 +5,5 @@ module.exports = {
     "@storybook/addon-backgrounds/register",
     "@storybook/addon-viewport/register"
   ],
-  stories: ["../src/components/**/**/*.stories.[tj]s"]
+  stories: ["../src/components/**/**/**/**/*.stories.tsx"]
 };

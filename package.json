@@ -21,12 +21,12 @@
     "typescript": "^3.8.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-scripts start .env",
+    "build": "react-scripts build .env",
+    "test": "react-scripts test .env",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 3333 -s public",
-    "build-storybook": "build-storybook -s public"
+    "storybook": "start-storybook -p 3333 -s public .env",
+    "build-storybook": "build-storybook -s public .env"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -1,4 +1,6 @@
 .DS_Store
+.vs_code
+.idea
 # Logs
 logs
 *.log
@@ -70,6 +72,8 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
+*.env
+*.env.*
 .env
 .env.test
 

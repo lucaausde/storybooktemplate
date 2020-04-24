@@ -5,11 +5,6 @@ import * as serviceWorker from "./serviceWorker";
 
 import "./constants/lang/i18n";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 
 serviceWorker.unregister();

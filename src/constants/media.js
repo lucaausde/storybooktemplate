@@ -1,10 +1,13 @@
-import mediaHelper from "styled-media-helper";
+import { generateMedia } from "styled-media-query";
 
-const media = mediaHelper({
-  sm: 320,
-  ms: 550,
-  md: 768,
-  lg: 1240
+const media = generateMedia({
+  xs: "320px",
+  introslider: "440px",
+  s: "550px",
+  md: "768px",
+  l: "900px",
+  xl: "1000px",
+  lg: "1240px",
 });
 
 export default media;

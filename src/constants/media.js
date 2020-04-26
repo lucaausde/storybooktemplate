@@ -2,7 +2,6 @@ import { generateMedia } from "styled-media-query";
 
 const media = generateMedia({
   xs: "320px",
-  introslider: "440px",
   s: "550px",
   md: "768px",
   l: "900px",

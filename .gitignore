@@ -2,6 +2,7 @@
 .vscode
 .idea
 # Logs
+*.lock
 logs
 *.log
 yarn.lock

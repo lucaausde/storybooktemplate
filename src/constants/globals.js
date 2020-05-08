@@ -19,11 +19,6 @@ const GlobalStyle = createGlobalStyle`
     -moz-appearance: none !important;
     appearance: none !important;
   }
-
-  ::-moz-selection {
-    color: ${(props) => props.theme.colors.highlightcolor};
-    background: ${(props) => props.theme.colors.highlightbackground};
-  }
 `;
 
 export default GlobalStyle;

@@ -57,6 +57,10 @@ export const withEmoji = () => (
 
 No problem, I've got you covered. You can find all variables at [src/constants/theme/defaultTheme.js](https://github.com/lucaausde/storybooktemplate/blob/master/src/constants/theme/defaultTheme.js).
 
+```bash
+${props => props.theme.[selector]}
+```
+
 ---
 
 Thank you for using my template! 🏆

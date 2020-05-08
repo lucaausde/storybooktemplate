@@ -13,22 +13,22 @@ i18n
   .init({
     resources: {
       en: {
-        translation: en
+        translation: en,
       },
       de: {
-        translation: de
-      }
+        translation: de,
+      },
     },
     fallbackLng: "en",
     debug: false,
 
     interpolation: {
-      escapeValue: false
+      escapeValue: false,
     },
 
     react: {
-      useSuspense: false
-    }
+      useSuspense: false,
+    },
   });
 
 export default i18n;

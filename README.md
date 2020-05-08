@@ -1,76 +1,62 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# reactstorybook
 
-## Available Scripts
+> A template for React apps
 
-In the project directory, you can run:
+State of development: 🐥 [May, 8. 2020]
 
-### `yarn storybook`
+This is a project template for [ReactJS](https://reactjs.org) apps. To simplify the development workflow, this template extends [Storybook](https://storybook.js.org) - with some addons - as well as other modules. Feel free to use, copy, modify, merge or publish this template.
 
-Run storybook.<br />
-Open [http://localhost:3333](http://localhost:3333) to view it in the browser.
+## Getting started ...
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1. After cloning this repository, please install all dependencies with either npm or yarn.
 
-### `yarn start`
+```bash
+yarn
+npm i
+```
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. Once you're done downloading the dependencies, start eiter storybook or the rollup development server.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```bash
+yarn storybook
+yarn start
+```
 
-### `yarn test`
+3. When finished developing, build the app.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+yarn build
+```
 
-### `yarn build`
+## New to React?
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Check out their [tutorial](https://reactjs.org/tutorial/tutorial.html) or read their [documentation](https://reactjs.org/docs/getting-started.html).
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Don't know how to write stories?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Take the `Button` component as reference. `Button` is currently residing at [src/components/Button.stories.tsx](https://github.com/lucaausde/storybooktemplate/blob/master/src/components/Button.stories.tsx).
 
-### `yarn eject`
+```bash
+import React from "react";
+import { Button } from "@storybook/react/demo";
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+export default { title: "Button" };
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+export const withText = () => <Button>Hello Button</Button>;
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+export const withEmoji = () => (
+  <Button>
+    <span role="img" aria-label="so cool">
+      😀 😎 👍 💯
+    </span>
+  </Button>
+);
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Want to use variables?
 
-## Learn More
+No problem, I've got you covered. You can find all variables at [src/constants/theme/defaultTheme.js](https://github.com/lucaausde/storybooktemplate/blob/master/src/constants/theme/defaultTheme.js).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Thank you for using my template! 🏆

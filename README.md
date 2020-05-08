@@ -2,7 +2,7 @@
 
 > A template for React apps
 
-State of development: 🐥 [May, 8. 2020]
+State of development: 🐥 [May, 9. 2020]
 
 This is a project template for [ReactJS](https://reactjs.org) apps. To simplify the development workflow, this template extends [Storybook](https://storybook.js.org) - with some addons - as well as other modules. Feel free to use, copy, modify, merge or publish this template.
 

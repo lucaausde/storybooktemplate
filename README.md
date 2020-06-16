@@ -62,5 +62,3 @@ ${props => props.theme.[selector]}
 ```
 
 ---
-
-Thank you for using my template! 🏆
